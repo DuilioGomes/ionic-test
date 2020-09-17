@@ -7,11 +7,11 @@ const routes: Routes = [
     loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
   },
   {
-    path: 'address',
+    path: 'address/new',
     loadChildren: () => import('./view-message/view-message.module').then( m => m.ViewMessagePageModule)
   },
   {
-    path: 'address/:id',
+    path: 'address/edit/:id',
     loadChildren: () => import('./view-message/view-message.module').then( m => m.ViewMessagePageModule)
   },
   {

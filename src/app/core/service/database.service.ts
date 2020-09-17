@@ -28,7 +28,7 @@ export class DatabaseService {
 
   getCreateTable(){
     const sqls = [];
-    sqls.push('CREATE TABLE IF NOT EXISTS address (id integer key AUTOINCREMENT, desciption varchar(255));');
+    sqls.push('CREATE TABLE IF NOT EXISTS address (id integer primary key AUTO_INCREMENT, description varchar(255));');
     return sqls.join('\n');
   }
 
